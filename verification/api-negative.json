@@ -1,0 +1,113 @@
+[
+  {
+    "case": "invalid",
+    "route": "book",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "invalid",
+    "route": "contact",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "invalid",
+    "route": "support",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "invalid",
+    "route": "gift-card",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "invalid",
+    "route": "newsletter",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "honeypot",
+    "route": "book",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "honeypot",
+    "route": "contact",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "honeypot",
+    "route": "support",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "honeypot",
+    "route": "gift-card",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "honeypot",
+    "route": "newsletter",
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "rate-limit",
+    "attempt": 1,
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "rate-limit",
+    "attempt": 2,
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "rate-limit",
+    "attempt": 3,
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "rate-limit",
+    "attempt": 4,
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "rate-limit",
+    "attempt": 5,
+    "status": 400,
+    "passed": true
+  },
+  {
+    "case": "rate-limit",
+    "attempt": 6,
+    "status": 429,
+    "passed": true
+  },
+  {
+    "case": "origin",
+    "status": 403,
+    "passed": true
+  },
+  {
+    "case": "media",
+    "status": 403,
+    "passed": true
+  },
+  {
+    "case": "size",
+    "status": 413,
+    "passed": true
+  }
+]

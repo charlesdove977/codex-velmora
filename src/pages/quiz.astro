@@ -1,0 +1,4 @@
+---
+import Layout from '../layouts/Layout.astro';import PageIntro from '../components/PageIntro.astro';import Quiz from '../components/Quiz';
+---
+<Layout title="Find your starting point." noindex={true} hideBook={true}><PageIntro title="Find your starting point." description="Six thoughtful questions to help you explore care. This guide offers conversation starters, not a diagnosis or treatment recommendation." eyebrow="Your care, your pace"/><section class="container section" style="padding-top:0"><Quiz client:load/></section></Layout>

@@ -1,0 +1,5 @@
+---
+import {getCollection}from'astro:content';import Picture from './Picture.astro';const articles=(await getCollection('journal')).sort((a,b)=>b.data.date.valueOf()-a.data.date.valueOf());
+---
+<div class="grid-3">{articles.map(a=><a class="journal-card" href={`/journal/${a.id}`}><div class="journal-image"><Picture name={a.data.image} alt={a.data.image==='desert'?'Arizona saguaro cacti in desert light':a.data.image==='space'?'A serene spa lounge with curved seating':'A glass pipette and skincare serum'} sizes="(max-width:767px) 100vw,33vw"/></div><span class="eyebrow">{a.data.category} · 3 min read</span><h3>{a.data.title}</h3><span class="button link">Read the note ↗</span></a>)}</div>
+<style>.journal-image{aspect-ratio:4/3;overflow:hidden;margin-bottom:1.5rem}.journal-image :global(img){height:100%;width:100%;object-fit:cover;transition:transform 1s var(--ease)}.journal-image :global(picture){display:contents}.journal-card:hover :global(img){transform:scale(1.035)}h3{font-size:var(--text-2xl)}.eyebrow{font-size:var(--text-xs);letter-spacing:.1em}</style>

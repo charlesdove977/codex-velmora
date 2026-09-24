@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "contact",
+    "status": 200,
+    "success": true,
+    "demo": true,
+    "ref": "VM-B6DAA697"
+  },
+  {
+    "kind": "support",
+    "status": 200,
+    "success": true,
+    "demo": true,
+    "ref": "VM-F335EB74"
+  },
+  {
+    "kind": "gift-card",
+    "status": 200,
+    "success": true,
+    "demo": true,
+    "ref": "VM-6DE92E8A"
+  },
+  {
+    "kind": "newsletter",
+    "status": 200,
+    "success": true,
+    "demo": true,
+    "ref": "VM-5EF71FCA"
+  },
+  {
+    "kind": "book",
+    "status": 200,
+    "success": true,
+    "demo": true,
+    "ref": "VM-5525AD34",
+    "ics": true
+  }
+]

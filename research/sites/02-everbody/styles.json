@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "The Gold Standard In Cosmetic Dermatology",
+    "font": "Lora-Regular",
+    "size": "60px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "h2": {
+    "text": "Raising The Bar In Aesthetics",
+    "font": "Lora-Regular",
+    "size": "48px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "We value your privacyWe use cookies to enhance your browsing experience, serve personalised ads or content, and analyse ",
+    "font": "Manrope-Light",
+    "size": "16px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "<img src=\"https://everbody.com/wp-content/uploads/2025/04/logo.svg\" class=\"custom-logo\" itemprop=\"siteLogo\" alt=\"Everbod",
+    "font": "Manrope-Light",
+    "size": "16px",
+    "color": "rgb(23, 121, 186)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "",
+    "font": "Manrope-Light",
+    "size": "16px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(255, 255, 255, 0)",
+    "spacing": "normal"
+  }
+}

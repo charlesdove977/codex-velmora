@@ -1,0 +1,4 @@
+---
+const {specs}=Astro.props as {specs:{duration:string;discomfort:string;downtime:string;onset:string;longevity:string}};
+---
+<dl class="spec-strip">{Object.entries(specs).map(([k,v])=><div><dt>{k==='onset'?'Results begin':k}</dt><dd>{v}</dd></div>)}</dl>

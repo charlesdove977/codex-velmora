@@ -1,0 +1,7 @@
+---
+const {id='care-modal',title='A considered first step',button='Open details'}=Astro.props;
+---
+<button class="button ghost" data-modal-open={id}>{button}</button><dialog id={id} class="modal" aria-labelledby={`${id}-title`}><button class="icon-button close-modal" aria-label="Close dialog">×</button><h3 id={`${id}-title`}>{title}</h3><div style="margin-top:1.5rem"><slot/></div></dialog>
+<script>
+document.querySelectorAll<HTMLButtonElement>('[data-modal-open]').forEach(b=>{const d=document.getElementById(b.dataset.modalOpen!) as HTMLDialogElement;b.addEventListener('click',()=>d.showModal());d.querySelector('button')?.addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
+</script>

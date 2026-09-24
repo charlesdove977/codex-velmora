@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "Medical Aesthetics Made Modern",
+    "font": "\"Blacker Pro Display\", serif",
+    "size": "48px",
+    "color": "rgb(52, 71, 67)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "h2": {
+    "text": "Best Sellers",
+    "font": "\"Blacker Pro Display\", serif",
+    "size": "40px",
+    "color": "rgb(33, 37, 38)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "Refer a Friend and Earn a $50 Credit Refer Now\n        \n      \n      \n    \n  \n\n\n  \n  \n  \n    \n      \n        \n          ",
+    "font": "Avenir, sans-serif",
+    "size": "18px",
+    "color": "rgb(33, 37, 38)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "Refer Now",
+    "font": "\"Blacker Pro Display\", serif",
+    "size": "14px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "View All",
+    "font": "\"Blacker Pro Display\", serif",
+    "size": "16px",
+    "color": "rgb(33, 37, 38)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  }
+}

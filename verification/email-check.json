@@ -1,0 +1,50 @@
+[
+  {
+    "route": "contact",
+    "simulatedFailure": false,
+    "status": 200,
+    "passed": true
+  },
+  {
+    "route": "support",
+    "simulatedFailure": false,
+    "status": 200,
+    "passed": true
+  },
+  {
+    "route": "gift-card",
+    "simulatedFailure": false,
+    "status": 200,
+    "passed": true
+  },
+  {
+    "route": "newsletter",
+    "simulatedFailure": false,
+    "status": 200,
+    "passed": true
+  },
+  {
+    "route": "book",
+    "simulatedFailure": false,
+    "status": 200,
+    "passed": true
+  },
+  {
+    "route": "contact",
+    "simulatedFailure": true,
+    "status": 503,
+    "passed": true
+  },
+  {
+    "case": "booking receipt with tentative calendar",
+    "passed": true
+  },
+  {
+    "case": "newsletter audience",
+    "passed": true
+  },
+  {
+    "case": "support subject",
+    "passed": true
+  }
+]

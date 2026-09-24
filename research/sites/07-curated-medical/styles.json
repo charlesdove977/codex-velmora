@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "Timeless Beauty, Crafted Care.",
+    "font": "Miller, sans-serif",
+    "size": "50px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.25px"
+  },
+  "h2": {
+    "text": "More Than Just a Medical Spa.",
+    "font": "Miller, sans-serif",
+    "size": "50px",
+    "color": "rgb(53, 53, 53)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.25px"
+  },
+  "body": {
+    "text": "Skip to content  <img width=\"145\" height=\"37\" src=\"https://curatedmed.com/wp-content/uploads/2023/10/Logo.svg\" class=\"at",
+    "font": "\"Josefin Sans\", sans-serif",
+    "size": "16px",
+    "color": "rgb(64, 64, 64)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "-0.16px"
+  },
+  "nav": {
+    "text": "<img width=\"145\" height=\"37\" src=\"https://curatedmed.com/wp-content/uploads/2023/10/Logo.svg\" class=\"attachment-full siz",
+    "font": "\"Josefin Sans\", sans-serif",
+    "size": "16px",
+    "color": "rgb(64, 64, 64)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "-0.16px"
+  },
+  "button": {
+    "text": "",
+    "font": "\"Josefin Sans\", sans-serif",
+    "size": "15px",
+    "color": "rgb(64, 64, 64)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  }
+}

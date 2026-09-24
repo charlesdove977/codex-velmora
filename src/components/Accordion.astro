@@ -1,0 +1,4 @@
+---
+const {items}=Astro.props as {items:{q:string,a:string}[]};
+---
+<div class="accordion-group">{items.map(({q,a})=><details class="accordion"><summary>{q}</summary><div class="answer">{a}</div></details>)}</div>

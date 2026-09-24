@@ -1,0 +1,11 @@
+---
+import HeroScene from './three/HeroScene';
+import {site} from '../config/site';
+const steps=[['Consult','We begin by listening. Your skin, your health and the details you want to preserve.'],['Plan','A clear plan, shaped around your priorities, budget and time to recover.'],['Treat','Thoughtful care in practiced hands. Every decision explained before we begin.'],['Maintain','Check in, refine and care for your skin over time. A rhythm that feels like yours.']];
+---
+<section class="section method-section sand" data-method data-progress="0"><div class="container"><span class="eyebrow">The {site.shortName} Method</span><div class="method-stage"><div><h2>Good care.<br/><em>Beautifully considered.</em></h2><div class="method-progress" aria-hidden="true">{steps.map((_,i)=><span class={i===0?'active':''}/>)}</div><div class="method-copy">{steps.map(([name,copy],i)=><div class="method-step"><span class="eyebrow">0{i+1} / {name}</span><p class="intro">{copy}</p></div>)}</div></div><HeroScene client:visible method/></div></div></section>
+<script>
+if(matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches){Promise.all([import('gsap'),import('gsap/ScrollTrigger')]).then(([{gsap},{ScrollTrigger}])=>{
+gsap.registerPlugin(ScrollTrigger);const mm=gsap.matchMedia();mm.add('(min-width: 768px) and (prefers-reduced-motion: no-preference)',()=>{document.querySelectorAll<HTMLElement>('[data-method]').forEach(section=>{const steps=section.querySelectorAll<HTMLElement>('.method-step');ScrollTrigger.create({trigger:section,start:'top top',end:'+=1600',pin:true,scrub:1,onUpdate:self=>{section.dataset.progress=String(self.progress);const current=Math.min(3,Math.floor(self.progress*4));steps.forEach((s,i)=>gsap.to(s,{opacity:i===current?1:0,y:i===current?0:14,duration:.6,overwrite:true}));section.querySelectorAll('.method-progress span').forEach((s,i)=>s.classList.toggle('active',i<=current));}});});});
+});}
+</script>

@@ -1,0 +1,6 @@
+### Result
+{"modalOpen":true,"modalClosed":true,"carouselChanged":true}
+### Ran Playwright code
+```js
+await (async page=>{await page.goto("http://127.0.0.1:4322/styleguide");await page.emulateMedia({reducedMotion:"reduce"});await page.getByRole("button",{name:"Open details",exact:true}).click();const opened=await page.getByRole("dialog").isVisible();await page.keyboard.press("Escape");const closed=!await page.getByRole("dialog").isVisible();const next=page.getByRole("button",{name:"Next testimonial"});await next.scrollIntoViewIfNeeded();await page.waitForTimeout(400);const before=await page.locator("blockquote").innerText();await next.click();await page.waitForTimeout(100);return {modalOpen:opened,modalClosed:closed,carouselChanged:before!==await page.locator("blockquote").innerText()};})(page);
+```

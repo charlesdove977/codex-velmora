@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "Welcome to Scottsdale's 5-Star Rated Med Spa",
+    "font": "din-next-w01-light, sans-serif",
+    "size": "33px",
+    "color": "rgb(14, 60, 83)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "h2": {
+    "text": "Hello\nGorgeous.",
+    "font": "din-next-w01-light, sans-serif",
+    "size": "104px",
+    "color": "rgb(14, 60, 83)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "var bodyCacheable = true;\n    \n    var exclusionReason = {\"shouldRender\":true,\"forced\":false};\n    var ssrInfo = {\"cache",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "10px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "",
+    "font": "Arial, Helvetica, sans-serif",
+    "size": "10px",
+    "color": "rgb(0, 0, 238)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "Skip to Main Content",
+    "font": "Helvetica, Arial, \u30e1\u30a4\u30ea\u30aa, meiryo, \"\u30d2\u30e9\u30ae\u30ce\u89d2\u30b4 pro w3\", \"hiragino kaku gothic pro\", sans-serif",
+    "size": "14px",
+    "color": "rgb(17, 109, 255)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "normal"
+  }
+}

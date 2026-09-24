@@ -1,0 +1,47 @@
+[
+  {
+    "foreground": "ink",
+    "background": "bone",
+    "ratio": 14.96
+  },
+  {
+    "foreground": "muted",
+    "background": "bone",
+    "ratio": 5.98
+  },
+  {
+    "foreground": "gold-text",
+    "background": "bone",
+    "ratio": 5.06
+  },
+  {
+    "foreground": "ink",
+    "background": "sand",
+    "ratio": 12.64
+  },
+  {
+    "foreground": "muted",
+    "background": "sand",
+    "ratio": 5.05
+  },
+  {
+    "foreground": "bone",
+    "background": "ink",
+    "ratio": 14.96
+  },
+  {
+    "foreground": "stone",
+    "background": "ink",
+    "ratio": 8.24
+  },
+  {
+    "foreground": "error",
+    "background": "bone",
+    "ratio": 6.38
+  },
+  {
+    "foreground": "ink",
+    "background": "white",
+    "ratio": 16.71
+  }
+]

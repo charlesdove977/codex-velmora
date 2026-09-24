@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "the treatments experts recommend",
+    "font": "\"Noto Serif Display\", sans-serif",
+    "size": "70.4px",
+    "color": "rgb(16, 49, 43)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "1.38px"
+  },
+  "h2": {
+    "text": "award-winning treatments",
+    "font": "\"Noto Serif Display\", sans-serif",
+    "size": "44px",
+    "color": "rgb(16, 49, 43)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "1.26px"
+  },
+  "body": {
+    "text": "Opens in a new window Opens an external website Opens an external website in a new window         By clicking \"Accept\", ",
+    "font": "Poppins, sans-serif",
+    "size": "16px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "",
+    "font": "Poppins, sans-serif",
+    "size": "16px",
+    "color": "rgb(2, 131, 113)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "Accept",
+    "font": "Helvetica, Arial, \"Hiragino Sans GB\", STXihei, \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Hind, \"MS Gothic\", \"Apple SD Gothic Neo\", NanumBarunGothic, sans-serif",
+    "size": "16px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgb(17, 172, 106)",
+    "spacing": "normal"
+  }
+}

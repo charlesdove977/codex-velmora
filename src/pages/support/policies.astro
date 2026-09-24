@@ -1,0 +1,7 @@
+---
+import Layout from '../../layouts/Layout.astro';import PageIntro from '../../components/PageIntro.astro';import Accordion from '../../components/Accordion.astro';
+import {policies as items} from '../../data/help';
+
+import {site} from '../../config/site';
+---
+<Layout title="Practice policies" description={`Read clear sample policies for booking, cancellations, memberships, refunds and consent at the fictional ${site.shortName} practice.`}><PageIntro title="Clear expectations. Better care." eyebrow="Practice policies" description="These sample policies explain how a live practice could work. Confirm all terms directly before entering a treatment or payment agreement." items={[{name:'Support',url:'/support'},{name:'Policies'}]}/><section class="section container rich-copy" style="padding-top:0"><Accordion items={items}/></section></Layout>

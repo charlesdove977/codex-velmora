@@ -1,0 +1,5 @@
+---
+import Button from './Button.astro';
+const {name,price,description,benefits,featured=false}=Astro.props;
+---
+<article class:list={['membership-card',{featured}]}><span class="eyebrow">{featured?'The signature ritual':'Your care, continued'}</span><h3>{name}</h3><div class="price">${price}<small> / month</small></div><p class="small">{description}</p><ul class="small">{benefits.map((b:string)=><li>{b}</li>)}</ul><Button href={`/book?membership=${encodeURIComponent(name)}`} variant={featured?'light':''}>Explore {name}</Button></article>

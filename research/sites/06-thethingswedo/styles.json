@@ -1,0 +1,34 @@
+{
+  "h2": {
+    "text": "Cookie consent",
+    "font": "\"Brown Light\"",
+    "size": "19.2px",
+    "color": "rgb(31, 31, 31)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "@font-face {\n        font-family: 'a11y-icons';\n        src: url(\"https://jsappcdn.hikeorders.com/assets/a11y-icons/a11y",
+    "font": "\"Brown Light\"",
+    "size": "16px",
+    "color": "rgb(22, 22, 22)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "",
+    "font": "\"Old Standard TT\", serif",
+    "size": "25px",
+    "color": "rgb(214, 115, 90)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "Manage preferences",
+    "font": "\"Brown Light\"",
+    "size": "16px",
+    "color": "rgb(51, 51, 51)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "2px"
+  }
+}

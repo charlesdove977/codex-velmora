@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';import PageIntro from '../components/PageIntro.astro';import Accordion from '../components/Accordion.astro';import {faqs,helpCategories} from '../data/help';
+const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))};
+
+import {site} from '../config/site';
+---
+<Layout title="Frequently asked questions" description={`Answers about consultations, preparing for a visit, aftercare, membership and the ${site.shortName} demonstration practice.`} schema={schema}><PageIntro title="Good questions welcome." eyebrow="Frequently asked" description="A little clarity before you take the next step." items={[{name:'FAQ'}]}/><section class="section container" style="padding-top:0"><div class="field" style="max-width:600px;margin-bottom:3rem"><label for="faq-search">Search all questions</label><input id="faq-search" type="search"/></div><p id="faq-count" class="small muted" aria-live="polite"></p>{helpCategories.map(c=><section data-faq-group class="split" style="align-items:start;margin-bottom:4rem"><h2>{c}</h2><Accordion items={faqs.filter(f=>f.category===c)}/></section>)}</section></Layout>
+
+<script>document.querySelector<HTMLInputElement>('#faq-search')?.addEventListener('input',e=>{const q=(e.target as HTMLInputElement).value.toLowerCase();let count=0;document.querySelectorAll<HTMLElement>('details.accordion').forEach(el=>{el.hidden=!el.textContent?.toLowerCase().includes(q);if(!el.hidden)count++;});document.querySelectorAll<HTMLElement>('[data-faq-group]').forEach(el=>el.hidden=![...el.querySelectorAll<HTMLElement>('details')].some(d=>!d.hidden));document.querySelector('#faq-count')!.textContent=`${count} answers found`;});</script>

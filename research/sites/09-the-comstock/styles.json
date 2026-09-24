@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "The Comstock",
+    "font": "\"Cormorant Garamond\", serif",
+    "size": "72px",
+    "color": "rgb(255, 253, 244)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "-1.44px"
+  },
+  "h2": {
+    "text": "Your cart is empty",
+    "font": "\"Cormorant Garamond\", serif",
+    "size": "56px",
+    "color": "rgb(31, 31, 31)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "-1.12px"
+  },
+  "body": {
+    "text": "BackAccessibility optionsenAre you sure you want to hide the widget forever? If you need it back, please clear your cook",
+    "font": "\"Instrument Sans\", sans-serif",
+    "size": "16px",
+    "color": "rgb(66, 66, 66)",
+    "background": "rgb(249, 247, 237)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "Facials + Skin Rejuvenation",
+    "font": "\"Instrument Sans\", sans-serif",
+    "size": "14px",
+    "color": "rgb(217, 217, 217)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.84px"
+  },
+  "button": {
+    "text": "",
+    "font": "accessibly",
+    "size": "16px",
+    "color": "rgb(66, 66, 66)",
+    "background": "rgb(87, 76, 213)",
+    "spacing": "normal"
+  }
+}

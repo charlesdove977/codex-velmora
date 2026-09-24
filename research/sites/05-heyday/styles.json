@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "$40+ off your first facial",
+    "font": "SunsetGothicLight, sans-serif",
+    "size": "72px",
+    "color": "rgb(15, 42, 89)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "-2.16px"
+  },
+  "h2": {
+    "text": "Your bag is empty!",
+    "font": "SunsetGothicLight, sans-serif",
+    "size": "32px",
+    "color": "rgb(15, 42, 89)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-N8NKRFB\" height=\"0\" width=\"0\" style=\"display:none;visibilit",
+    "font": "SunsetGothicRegular, sans-serif",
+    "size": "16px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "",
+    "font": "SunsetGothicRegular, sans-serif",
+    "size": "16px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "",
+    "font": "SunsetGothicRegular, sans-serif",
+    "size": "16px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  }
+}

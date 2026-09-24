@@ -1,0 +1,96 @@
+
+> codex-velmora@1.0.0 build
+> astro check && astro build
+
+14:13:36 [@astrojs/node] Enabling sessions with filesystem storage
+14:13:37 [content] Syncing content
+14:13:37 [content] Synced content
+14:13:37 [types] Generated 503ms
+14:13:37 [check] Getting diagnostics for Astro files in /Users/user/Desktop/Development-Charlie-2/Charlieautomates/websites/Codex-Velmora...
+Result (70 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+14:13:41 [@astrojs/node] Enabling sessions with filesystem storage
+14:13:41 [content] Syncing content
+14:13:41 [content] Synced content
+14:13:41 [types] Generated 355ms
+14:13:41 [build] output: "static"
+14:13:41 [build] mode: "server"
+14:13:41 [build] directory: /Users/user/Desktop/Development-Charlie-2/Charlieautomates/websites/Codex-Velmora/dist/
+14:13:41 [build] adapter: @astrojs/node
+14:13:41 [build] Collecting build info...
+14:13:41 [build] ✓ Completed in 387ms.
+14:13:41 [build] Building server entrypoints...
+14:13:42 [vite] ✓ built in 360ms
+14:13:42 [vite] ✓ built in 58ms
+14:13:42 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+14:13:42 [vite] ✓ built in 197ms
+
+ prerendering static routes 
+14:13:42   ├─ /404.html (+13ms) 
+14:13:42   ├─ /about/index.html (+3ms) 
+14:13:42   ├─ /accessibility/index.html (+2ms) 
+14:13:42   ├─ /book/confirmed/index.html (+3ms) 
+14:13:42   ├─ /book/index.html (+7ms) 
+14:13:42   ├─ /concerns/lines-wrinkles/index.html (+2ms) 
+14:13:42   ├─ /concerns/volume-loss/index.html (+1ms) 
+14:13:42   ├─ /concerns/pigmentation/index.html (+1ms) 
+14:13:42   ├─ /concerns/acne-texture/index.html (+1ms) 
+14:13:42   ├─ /concerns/body/index.html (+1ms) 
+14:13:42   ├─ /concerns/hair/index.html (+1ms) 
+14:13:42   ├─ /contact/index.html (+2ms) 
+14:13:42   ├─ /faq/index.html (+2ms) 
+14:13:42   ├─ /gift-cards/index.html (+2ms) 
+14:13:42   ├─ /journal/first-aesthetic-consultation/index.html (+2ms) 
+14:13:42   ├─ /journal/injectables-natural-looking-care/index.html (+1ms) 
+14:13:42   ├─ /journal/skincare-in-desert-climate/index.html (+1ms) 
+14:13:42   ├─ /journal/index.html (+2ms) 
+14:13:42   ├─ /medical-disclaimer/index.html (+2ms) 
+14:13:42   ├─ /membership/index.html (+2ms) 
+14:13:42   ├─ /pricing/index.html (+2ms) 
+14:13:42   ├─ /privacy/index.html (+1ms) 
+14:13:42   ├─ /quiz/index.html (+2ms) 
+14:13:42   ├─ /results/index.html (+2ms) 
+14:13:42   ├─ /styleguide/index.html (+4ms) 
+14:13:42   ├─ /support/aftercare/injectables/index.html (+1ms) 
+14:13:42   ├─ /support/aftercare/skin/index.html (+1ms) 
+14:13:42   ├─ /support/aftercare/laser/index.html (+1ms) 
+14:13:42   ├─ /support/aftercare/facials/index.html (+1ms) 
+14:13:42   ├─ /support/aftercare/body/index.html (+1ms) 
+14:13:42   ├─ /support/aftercare/wellness/index.html (+1ms) 
+14:13:42   ├─ /support/policies/index.html (+1ms) 
+14:13:42   ├─ /support/index.html (+2ms) 
+14:13:42   ├─ /team/elena-marquez/index.html (+1ms) 
+14:13:42   ├─ /team/sarah-bennett/index.html (+1ms) 
+14:13:42   ├─ /team/maya-chen/index.html (+1ms) 
+14:13:42   ├─ /team/isabel-reed/index.html (+1ms) 
+14:13:42   ├─ /team/nora-brooks/index.html (+1ms) 
+14:13:42   ├─ /terms/index.html (+1ms) 
+14:13:42   ├─ /treatments/neuromodulators/index.html (+2ms) 
+14:13:42   ├─ /treatments/dermal-fillers/index.html (+1ms) 
+14:13:42   ├─ /treatments/lip-enhancement/index.html (+1ms) 
+14:13:42   ├─ /treatments/biostimulators/index.html (+1ms) 
+14:13:42   ├─ /treatments/rf-microneedling/index.html (+1ms) 
+14:13:42   ├─ /treatments/ipl-photofacial/index.html (+1ms) 
+14:13:42   ├─ /treatments/laser-resurfacing/index.html (+1ms) 
+14:13:42   ├─ /treatments/hydrafacial/index.html (+7ms) 
+14:13:42   ├─ /treatments/chemical-peels/index.html (+2ms) 
+14:13:42   ├─ /treatments/laser-hair-removal/index.html (+2ms) 
+14:13:42   ├─ /treatments/body-contouring/index.html (+2ms) 
+14:13:42   ├─ /treatments/iv-therapy/index.html (+6ms) 
+14:13:42   ├─ /treatments/medical-weight-loss/index.html (+4ms) 
+14:13:42   ├─ /treatments/index.html (+23ms) 
+14:13:42   ├─ /index.html (+3ms) 
+14:13:42 ✓ Completed in 189ms.
+
+14:13:42 [build] Rearranging server assets...
+14:13:42 [build] ✓ Completed in 830ms.
+14:13:42 [@astrojs/sitemap] `sitemap-index.xml` created at `dist/client`
+14:13:42 [build] Server built in 1.24s
+14:13:42 [build] Complete!

@@ -1,0 +1,807 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@astrojs/node": {
+      "name": "@astrojs/node",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1115625,
+          "name": "@astrojs/node",
+          "dependency": "@astrojs/node",
+          "title": "Astro: Memory exhaustion DoS due to missing request body size limit in Server Islands",
+          "url": "https://github.com/advisories/GHSA-3rmj-9m5h-8fpv",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 5.9,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<10.0.0"
+        },
+        {
+          "source": 1117137,
+          "name": "@astrojs/node",
+          "dependency": "@astrojs/node",
+          "title": "Astro: Cache Poisoning due to incorrect error handling when if-match header is malformed ",
+          "url": "https://github.com/advisories/GHSA-c57f-mm3j-27q9",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-525"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<10.0.5"
+        },
+        {
+          "source": 1139372,
+          "name": "@astrojs/node",
+          "dependency": "@astrojs/node",
+          "title": "@astrojs/node: Backslash-prefixed paths not recognized as internal by trailing-slash redirect",
+          "url": "https://github.com/advisories/GHSA-r557-wffq-wvrc",
+          "severity": "low",
+          "cwe": [
+            "CWE-601"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=8.1.0 <11.0.2"
+        },
+        "astro"
+      ],
+      "effects": [],
+      "range": "<=11.0.1",
+      "nodes": [
+        "node_modules/@astrojs/node"
+      ],
+      "fixAvailable": {
+        "name": "@astrojs/node",
+        "version": "11.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@astrojs/tailwind": {
+      "name": "@astrojs/tailwind",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "astro"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-wasm-20220915005725 || >=3.0.0-beta.0",
+      "nodes": [
+        "node_modules/@astrojs/tailwind"
+      ],
+      "fixAvailable": {
+        "name": "@astrojs/tailwind",
+        "version": "2.1.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/core": {
+      "name": "@opentelemetry/core",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1153174,
+          "name": "@opentelemetry/core",
+          "dependency": "@opentelemetry/core",
+          "title": "OpenTelemetry Core: Unbounded memory allocation in W3C Baggage propagation",
+          "url": "https://github.com/advisories/GHSA-8988-4f7v-96qf",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<2.8.0"
+        }
+      ],
+      "effects": [
+        "@opentelemetry/instrumentation-amqplib",
+        "@opentelemetry/instrumentation-connect",
+        "@opentelemetry/instrumentation-express",
+        "@opentelemetry/instrumentation-fs",
+        "@opentelemetry/instrumentation-hapi",
+        "@opentelemetry/instrumentation-http",
+        "@opentelemetry/instrumentation-koa",
+        "@opentelemetry/instrumentation-mongoose",
+        "@opentelemetry/instrumentation-pg",
+        "@opentelemetry/instrumentation-undici",
+        "@opentelemetry/resources",
+        "@opentelemetry/sdk-trace-base",
+        "@opentelemetry/sql-common",
+        "@sentry/node"
+      ],
+      "range": "<2.8.0",
+      "nodes": [
+        "node_modules/@opentelemetry/core"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/instrumentation-amqplib": {
+      "name": "@opentelemetry/instrumentation-amqplib",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [
+        "@sentry/node"
+      ],
+      "range": "<=0.46.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-amqplib"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/instrumentation-connect": {
+      "name": "@opentelemetry/instrumentation-connect",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [],
+      "range": "<=0.43.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-connect"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/instrumentation-express": {
+      "name": "@opentelemetry/instrumentation-express",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [],
+      "range": "<=0.47.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-express"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/instrumentation-fs": {
+      "name": "@opentelemetry/instrumentation-fs",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [
+        "@sentry/node"
+      ],
+      "range": "<=0.19.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-fs"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/instrumentation-hapi": {
+      "name": "@opentelemetry/instrumentation-hapi",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [],
+      "range": "0.24.0 - 0.45.2",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-hapi"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/instrumentation-http": {
+      "name": "@opentelemetry/instrumentation-http",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [
+        "@sentry/node"
+      ],
+      "range": "<=0.16.0 || 0.19.1-alpha.7 - 0.218.0",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-http"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/instrumentation-koa": {
+      "name": "@opentelemetry/instrumentation-koa",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [],
+      "range": "<=0.15.0 || 0.20.0 - 0.47.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-koa"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/instrumentation-mongoose": {
+      "name": "@opentelemetry/instrumentation-mongoose",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [],
+      "range": "<=0.46.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-mongoose"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/instrumentation-mysql2": {
+      "name": "@opentelemetry/instrumentation-mysql2",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/sql-common"
+      ],
+      "effects": [],
+      "range": "0.34.1 - 0.45.2",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-mysql2"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/instrumentation-pg": {
+      "name": "@opentelemetry/instrumentation-pg",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core",
+        "@opentelemetry/sql-common"
+      ],
+      "effects": [
+        "@sentry/node"
+      ],
+      "range": "0.34.0 - 0.51.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-pg"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/instrumentation-undici": {
+      "name": "@opentelemetry/instrumentation-undici",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [
+        "@sentry/node"
+      ],
+      "range": "<=0.10.1",
+      "nodes": [
+        "node_modules/@opentelemetry/instrumentation-undici"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@opentelemetry/resources": {
+      "name": "@opentelemetry/resources",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [],
+      "range": "0.8.0 - 2.7.1",
+      "nodes": [
+        "node_modules/@opentelemetry/resources"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/sdk-trace-base": {
+      "name": "@opentelemetry/sdk-trace-base",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core",
+        "@opentelemetry/resources"
+      ],
+      "effects": [],
+      "range": "<=2.7.1",
+      "nodes": [
+        "node_modules/@opentelemetry/sdk-trace-base"
+      ],
+      "fixAvailable": true
+    },
+    "@opentelemetry/sql-common": {
+      "name": "@opentelemetry/sql-common",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core"
+      ],
+      "effects": [
+        "@opentelemetry/instrumentation-mysql2",
+        "@opentelemetry/instrumentation-pg"
+      ],
+      "range": "<=0.40.1",
+      "nodes": [
+        "node_modules/@opentelemetry/sql-common"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@puppeteer/browsers": {
+      "name": "@puppeteer/browsers",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "extract-zip"
+      ],
+      "effects": [
+        "puppeteer-core"
+      ],
+      "range": "<=2.13.2",
+      "nodes": [
+        "node_modules/@puppeteer/browsers"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@sentry/node": {
+      "name": "@sentry/node",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@opentelemetry/core",
+        "@opentelemetry/instrumentation-amqplib",
+        "@opentelemetry/instrumentation-connect",
+        "@opentelemetry/instrumentation-express",
+        "@opentelemetry/instrumentation-fs",
+        "@opentelemetry/instrumentation-hapi",
+        "@opentelemetry/instrumentation-http",
+        "@opentelemetry/instrumentation-koa",
+        "@opentelemetry/instrumentation-mongoose",
+        "@opentelemetry/instrumentation-mysql2",
+        "@opentelemetry/instrumentation-pg",
+        "@opentelemetry/instrumentation-undici",
+        "@opentelemetry/resources",
+        "@opentelemetry/sdk-trace-base"
+      ],
+      "effects": [
+        "lighthouse"
+      ],
+      "range": "8.0.0-alpha.1 - 10.53.1",
+      "nodes": [
+        "node_modules/@sentry/node"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "astro": {
+      "name": "astro",
+      "severity": "critical",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1117141,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+          "url": "https://github.com/advisories/GHSA-j687-52p2-xcff",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<6.1.6"
+        },
+        {
+          "source": 1118920,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Server island encrypted parameters vulnerable to cross-component replay",
+          "url": "https://github.com/advisories/GHSA-xr5h-phrj-8vxv",
+          "severity": "low",
+          "cwe": [
+            "CWE-79",
+            "CWE-323"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<6.1.10"
+        },
+        {
+          "source": 1123700,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: XSS via Unescaped Attribute Names in Spread Props",
+          "url": "https://github.com/advisories/GHSA-jrpj-wcv7-9fh9",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 4.2,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+          },
+          "range": "<6.4.6"
+        },
+        {
+          "source": 1139373,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: XSS via unescaped spread attribute names in renderHTMLElement (incomplete fix for CVE-2026-54298)",
+          "url": "https://github.com/advisories/GHSA-f48w-9m4c-m7f5",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<7.0.6"
+        },
+        {
+          "source": 1139375,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Cross-site scripting via unescaped transition:* directive values on hydrated islands",
+          "url": "https://github.com/advisories/GHSA-7pw4-f3q4-r2p2",
+          "severity": "low",
+          "cwe": [
+            "CWE-79",
+            "CWE-83",
+            "CWE-116"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=3.10.0 <7.0.4"
+        },
+        {
+          "source": 1139376,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Reflected XSS via unescaped View Transition animation properties",
+          "url": "https://github.com/advisories/GHSA-4g3v-8h47-v7g6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=2.9.0 <=7.0.9"
+        },
+        {
+          "source": 1139377,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Host header SSRF in prerendered error page fetch",
+          "url": "https://github.com/advisories/GHSA-2pvr-wf23-7pc7",
+          "severity": "high",
+          "cwe": [
+            "CWE-20",
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N"
+          },
+          "range": "<6.4.6"
+        },
+        {
+          "source": 1139378,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Reflected XSS via unescaped slot name",
+          "url": "https://github.com/advisories/GHSA-8hv8-536x-4wqp",
+          "severity": "high",
+          "cwe": [
+            "CWE-79",
+            "CWE-80"
+          ],
+          "cvss": {
+            "score": 7.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N"
+          },
+          "range": "<6.3.3"
+        },
+        {
+          "source": 1193723,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Remote code execution through AVIF image optimization",
+          "url": "https://github.com/advisories/GHSA-26w7-cxv4-gfx2",
+          "severity": "critical",
+          "cwe": [
+            "CWE-125",
+            "CWE-787"
+          ],
+          "cvss": {
+            "score": 9.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<7.2.8"
+        },
+        {
+          "source": 1193724,
+          "name": "astro",
+          "dependency": "astro",
+          "title": "Astro: Authorization bypass from missing path-segment boundary check when stripping the configured base",
+          "url": "https://github.com/advisories/GHSA-376h-93r7-7g6f",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-187"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=7.2.3"
+        },
+        "esbuild",
+        "sharp"
+      ],
+      "effects": [
+        "@astrojs/node",
+        "@astrojs/tailwind"
+      ],
+      "range": "<=7.2.7",
+      "nodes": [
+        "node_modules/astro"
+      ],
+      "fixAvailable": {
+        "name": "astro",
+        "version": "7.3.5",
+        "isSemVerMajor": true
+      }
+    },
+    "esbuild": {
+      "name": "esbuild",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1120680,
+          "name": "esbuild",
+          "dependency": "esbuild",
+          "title": "esbuild allows arbitrary file read when running the development server on Windows",
+          "url": "https://github.com/advisories/GHSA-g7r4-m6w7-qqqr",
+          "severity": "low",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 2.5,
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": ">=0.27.3 <0.28.1"
+        }
+      ],
+      "effects": [
+        "astro"
+      ],
+      "range": "0.27.3 - 0.28.0",
+      "nodes": [
+        "node_modules/esbuild"
+      ],
+      "fixAvailable": {
+        "name": "astro",
+        "version": "7.3.5",
+        "isSemVerMajor": true
+      }
+    },
+    "extract-zip": {
+      "name": "extract-zip",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1139346,
+          "name": "extract-zip",
+          "dependency": "extract-zip",
+          "title": "extract-zip unvalidated symlink path traversal",
+          "url": "https://github.com/advisories/GHSA-jmr9-qjv8-65gv",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+          },
+          "range": "<=2.0.1"
+        },
+        {
+          "source": 1193685,
+          "name": "extract-zip",
+          "dependency": "extract-zip",
+          "title": "extract-zip allows arbitrary file writes through symlink archive entries",
+          "url": "https://github.com/advisories/GHSA-7pqw-9j4j-h8q3",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H"
+          },
+          "range": "<=2.0.1"
+        }
+      ],
+      "effects": [
+        "@puppeteer/browsers"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/extract-zip"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "lighthouse": {
+      "name": "lighthouse",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@sentry/node",
+        "puppeteer-core"
+      ],
+      "effects": [],
+      "range": "10.1.1-dev.20230414 - 10.1.1-dev.20230503 || 10.2.0-dev.20230504 - 13.4.0",
+      "nodes": [
+        "node_modules/lighthouse"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "puppeteer-core": {
+      "name": "puppeteer-core",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@puppeteer/browsers"
+      ],
+      "effects": [
+        "lighthouse"
+      ],
+      "range": "19.8.4 - 24.43.1",
+      "nodes": [
+        "node_modules/puppeteer-core"
+      ],
+      "fixAvailable": {
+        "name": "lighthouse",
+        "version": "13.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "sharp": {
+      "name": "sharp",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1124066,
+          "name": "sharp",
+          "dependency": "sharp",
+          "title": "sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591",
+          "url": "https://github.com/advisories/GHSA-f88m-g3jw-g9cj",
+          "severity": "high",
+          "cwe": [
+            "CWE-1395"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.35.0"
+        },
+        {
+          "source": 1193725,
+          "name": "sharp",
+          "dependency": "sharp",
+          "title": "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545",
+          "url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+          "severity": "high",
+          "cwe": [
+            "CWE-122"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.35.4"
+        }
+      ],
+      "effects": [
+        "astro"
+      ],
+      "range": "<=0.35.4-rc.0",
+      "nodes": [
+        "node_modules/sharp"
+      ],
+      "fixAvailable": {
+        "name": "sharp",
+        "version": "0.35.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 2,
+      "moderate": 17,
+      "high": 5,
+      "critical": 1,
+      "total": 25
+    },
+    "dependencies": {
+      "prod": 484,
+      "dev": 291,
+      "optional": 105,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 853
+    }
+  }
+}

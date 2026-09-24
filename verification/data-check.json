@@ -1,0 +1,91 @@
+{
+  "treatments": [
+    {
+      "slug": "neuromodulators",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "dermal-fillers",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "lip-enhancement",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "biostimulators",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "rf-microneedling",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "ipl-photofacial",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "laser-resurfacing",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "hydrafacial",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "chemical-peels",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "laser-hair-removal",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "body-contouring",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "iv-therapy",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    },
+    {
+      "slug": "medical-weight-loss",
+      "faq": 6,
+      "missing": [],
+      "links": true
+    }
+  ],
+  "counts": {
+    "treatments": 13,
+    "concerns": 6,
+    "providers": 5,
+    "aftercare": 6,
+    "faqs": 26,
+    "policies": 8,
+    "articles": 3
+  }
+}

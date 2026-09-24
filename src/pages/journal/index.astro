@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';import PageIntro from '../../components/PageIntro.astro';import JournalCards from '../../components/JournalCards.astro';
+
+import {site} from '../../config/site';
+---
+<Layout title="The journal" description="Thoughtful reading on first consultations, desert skincare and a measured approach to aesthetic treatment."><PageIntro title="A little knowledge. A little calm." eyebrow={`The ${site.shortName} journal`} description="Useful perspectives for the questions that come before care." items={[{name:'Journal'}]}/><section class="section container" style="padding-top:0"><JournalCards/></section></Layout>

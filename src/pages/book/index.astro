@@ -1,0 +1,4 @@
+---
+import Layout from '../../layouts/Layout.astro';import PageIntro from '../../components/PageIntro.astro';import Booking from '../../components/Booking';
+---
+<Layout title="A conversation comes first." noindex={true} hideBook={true}><PageIntro title="A conversation comes first." description="Choose your interests and a preferred time. We will review your request before confirming your visit. No payment is taken here." eyebrow="Your care, your pace"/><section class="container section" style="padding-top:0"><Booking client:load/></section></Layout>

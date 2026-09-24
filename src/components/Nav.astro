@@ -1,0 +1,14 @@
+---
+import {site} from '../config/site';
+import Button from './Button.astro';
+const {hero=false}=Astro.props;
+const links=[['Treatments','/treatments'],['Our approach','/about'],['Results','/results'],['Pricing','/pricing'],['Membership','/membership']];
+---
+<header class:list={['site-header',{'over-hero':hero}]}><div class="container nav-inner"><a class="wordmark" href="/">{site.shortName}<small>Aesthetics</small></a><nav class="nav-links" aria-label="Main navigation">{links.map(([name,url],i)=><a href={url} class={i===2?'nav-secondary':''}>{name}</a>)}<Button href="/book">Book a consultation</Button></nav><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="28" height="24" viewBox="0 0 28 24" fill="none" aria-hidden="true"><path d="M2 8h24M2 16h24" stroke="currentColor"/></svg></button></div></header>
+<div id="mobile-menu" class="mobile-menu" hidden role="dialog" aria-modal="true" aria-label="Navigation"><div class="mobile-menu-top"><span class="wordmark">{site.shortName}</span><button class="close-menu" aria-label="Close menu">×</button></div><nav aria-label="Mobile navigation">{[...links,['Treatment match','/quiz'],['Journal','/journal'],['Support','/support'],['Contact','/contact']].map(([n,u])=><a href={u}>{n}</a>)}</nav><div class="button-row"><Button href="/book">Book a consultation</Button></div><p class="small muted" style="margin-top:2rem">{site.address.city}, {site.regionName}<br/>A moment for yourself.</p></div>
+<script>
+const trigger=document.querySelector<HTMLButtonElement>('.menu-toggle')!;const menu=document.querySelector<HTMLElement>('#mobile-menu')!;const close=menu.querySelector<HTMLButtonElement>('.close-menu')!;
+function setMenu(open:boolean){menu.hidden=!open;trigger.setAttribute('aria-expanded',String(open));document.body.classList.toggle('menu-open',open);document.querySelector('main')?.toggleAttribute('inert',open);document.querySelector('footer')?.toggleAttribute('inert',open);if(open)close.focus();else trigger.focus();}
+trigger.addEventListener('click',()=>setMenu(true));close.addEventListener('click',()=>setMenu(false));menu.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false);if(e.key==='Tab'){const items=[...menu.querySelectorAll<HTMLElement>('a,button')];const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+const header=document.querySelector('header')!;const onScroll=()=>header.classList.toggle('scrolled',window.scrollY>30);window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+</script>

@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "Aesthetician in Scottsdale",
+    "font": "Inter, sans-serif, -apple-system, \"system-ui\"",
+    "size": "14px",
+    "color": "rgb(207, 196, 177)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "2.1px"
+  },
+  "h2": {
+    "text": "Beauty from the Inside Out",
+    "font": "freight-neo-pro, sans-serif, -apple-system, \"system-ui\"",
+    "size": "48px",
+    "color": "rgb(35, 31, 32)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "Plus\n    \n    \n    \n    \n    Minus\n    \n    \n    \n    Remove\n    \n    \n    \n    Left Arrow\n    \n    \n    \n    Right Arro",
+    "font": "Inter, sans-serif, -apple-system, \"system-ui\"",
+    "size": "16px",
+    "color": "rgb(190, 190, 190)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "6865 E Becker Lane, Suite  100, Scottsdale, AZ 85254",
+    "font": "Inter, sans-serif, -apple-system, \"system-ui\"",
+    "size": "12px",
+    "color": "rgb(68, 68, 68)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "button": {
+    "text": "Main Menu",
+    "font": "Inter, sans-serif, -apple-system, \"system-ui\"",
+    "size": "16px",
+    "color": "rgb(190, 190, 190)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  }
+}

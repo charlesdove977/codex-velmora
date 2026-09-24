@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "name": "GlassCanvas.B41PIzuu.js",
+      "gzipBytes": 233543
+    },
+    {
+      "name": "react.DB-4Zxce.js",
+      "gzipBytes": 3294
+    },
+    {
+      "name": "jsx-runtime.BzgyUtJl.js",
+      "gzipBytes": 289
+    },
+    {
+      "name": "site.s6m35HkG.js",
+      "gzipBytes": 741
+    },
+    {
+      "name": "scheduler.Bt9tAVCi.js",
+      "gzipBytes": 1559
+    }
+  ],
+  "totalGzipBytes": 239426
+}

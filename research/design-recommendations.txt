@@ -1,0 +1,50 @@
++-----------------------------------------------------------------------------------------+
+|  TARGET: Velmora - RECOMMENDED DESIGN SYSTEM                                            |
++-----------------------------------------------------------------------------------------+
+|                                                                                          |
+|  PATTERN: Hero-Centric + Social Proof                                                   |
+|     CTA: Above fold                                                                     |
+|     Sections:                                                                           |
+|       1. Hero                                                                           |
+|       2. Features                                                                       |
+|       3. CTA                                                                            |
+|                                                                                          |
+|  STYLE: Soft UI Evolution                                                               |
+|     Keywords: Evolved soft UI, better contrast, modern aesthetics, subtle depth,        |
+|     accessibility-focused, improved shadows, hybrid                                     |
+|     Best For: Modern enterprise apps, SaaS platforms, health/wellness, modern business  |
+|     tools, professional, hybrid                                                         |
+|     Performance: ⚡ Excellent | Accessibility: ✓ WCAG AA+                                |
+|                                                                                          |
+|  COLORS:                                                                                |
+|     Primary:    #EC4899                                                                 |
+|     Secondary:  #F9A8D4                                                                 |
+|     CTA:        #8B5CF6                                                                 |
+|     Background: #FDF2F8                                                                 |
+|     Text:       #831843                                                                 |
+|     Notes: Soft pink + lavender luxury                                                  |
+|                                                                                          |
+|  TYPOGRAPHY: Playfair Display / Inter                                                   |
+|     Mood: elegant, luxury, sophisticated, timeless, premium, editorial                  |
+|     Best For: Luxury brands, fashion, spa, beauty, editorial, magazines, high-end       |
+|     e-commerce                                                                          |
+|     Google Fonts: https://fonts.google.com/share?selection.family=Inter:wght@300;400;500;600;700|Playfair+Display:wght@400;500;600;700|
+|     CSS Import: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;4...|
+|                                                                                          |
+|  KEY EFFECTS:                                                                           |
+|     Improved shadows (softer than flat, clearer than neumorphism), modern (200-300ms),  |
+|     focus visible, WCAG AA/AAA                                                          |
+|                                                                                          |
+|  AVOID (Anti-patterns):                                                                 |
+|     Bright neon colors + Harsh animations + Dark mode                                   |
+|                                                                                          |
+|  PRE-DELIVERY CHECKLIST:                                                                |
+|     [ ] No emojis as icons (use SVG: Heroicons/Lucide)                                  |
+|     [ ] cursor-pointer on all clickable elements                                        |
+|     [ ] Hover states with smooth transitions (150-300ms)                                |
+|     [ ] Light mode: text contrast 4.5:1 minimum                                         |
+|     [ ] Focus states visible for keyboard nav                                           |
+|     [ ] prefers-reduced-motion respected                                                |
+|     [ ] Responsive: 375px, 768px, 1024px, 1440px                                        |
+|                                                                                          |
++-----------------------------------------------------------------------------------------+

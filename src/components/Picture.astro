@@ -1,0 +1,5 @@
+---
+interface Props {name:string;alt:string;class?:string;eager?:boolean;sizes?:string;}
+const {name,alt,class:cls='',eager=false,sizes='(max-width: 767px) 100vw, 50vw'}=Astro.props;
+---
+<picture><source type="image/avif" srcset={[480,960,1600].map(w=>`/images/${name}-${w}.avif ${w}w`).join(',')} sizes={sizes}/><img class={cls} src={`/images/${name}-960.webp`} srcset={[480,960,1600].map(w=>`/images/${name}-${w}.webp ${w}w`).join(',')} sizes={sizes} alt={alt} width="960" height="1100" loading={eager?'eager':'lazy'} decoding="async" /></picture>

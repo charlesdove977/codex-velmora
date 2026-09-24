@@ -1,0 +1,1 @@
+export default {content:['./src/**/*.{astro,tsx,ts,html}'],theme:{extend:{colors:{bone:'var(--bone)',sand:'var(--sand)',stone:'var(--stone)',ink:'var(--ink)',gold:'var(--gold)',sage:'var(--sage)'},fontFamily:{display:['Cormorant Garamond','serif'],sans:['Manrope','sans-serif']}}}};

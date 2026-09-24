@@ -1,0 +1,5 @@
+---
+import Picture from './Picture.astro';
+const {treatment:t}=Astro.props;
+---
+<a class="treatment-card" href={`/treatments/${t.slug}`}><div class="image-wrap"><Picture name={t.image||'skin'} alt={t.imageAlt||'A woman caring for her skin in soft natural light'} sizes="(max-width:767px) 100vw, 33vw"/><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-meta"><span>{t.category}</span><span>From ${t.price}{t.unit||''}</span></div><h3>{t.name}</h3><p>{t.benefit}</p></a>

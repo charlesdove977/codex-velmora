@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "HAUS OF CONFIDENCE",
+    "font": "itc-avant-garde-gothic-pro, sans-serif",
+    "size": "99px",
+    "color": "rgba(255, 255, 255, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "3.6px"
+  },
+  "h2": {
+    "text": "WELCOME TO",
+    "font": "itc-avant-garde-gothic-pro, sans-serif",
+    "size": "40px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "3.2px"
+  },
+  "body": {
+    "text": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-M29PLW5T\" height=\"0\" width=\"0\" style=\"display:none;visibili",
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": "16px",
+    "color": "rgb(51, 51, 51)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "Home",
+    "font": "Montserrat, sans-serif",
+    "size": "13px",
+    "color": "rgb(239, 137, 86)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.38px"
+  },
+  "button": {
+    "text": "BOOK NOW",
+    "font": "Poppins, sans-serif",
+    "size": "13px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.38px"
+  }
+}

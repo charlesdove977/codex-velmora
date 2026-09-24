@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "Medical Aesthetics + Wellness",
+    "font": "work-sans",
+    "size": "18px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "5.4px"
+  },
+  "h2": {
+    "text": "The Best Work Goes Unnoticed",
+    "font": "freight-neo-pro",
+    "size": "55px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "body": {
+    "text": "Get $50 for each referral \u2022 refer a Friend and earn! \u2022 Find out more...\n      document.addEventListener(\"DOMContentLoade",
+    "font": "work-sans",
+    "size": "16px",
+    "color": "rgb(18, 24, 31)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "(866) 778-0043",
+    "font": "work-sans",
+    "size": "13px",
+    "color": "rgb(18, 24, 31)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.45px"
+  },
+  "button": {
+    "text": "Book Now",
+    "font": "freight-neo-pro",
+    "size": "15px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "normal"
+  }
+}

@@ -1,0 +1,4 @@
+---
+const {items=[]}=Astro.props as {items:{name:string,url?:string}[]};
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>{items.map(i=><><span aria-hidden="true">/</span>{i.url?<a href={i.url}>{i.name}</a>:<span aria-current="page">{i.name}</span>}</>)}</nav>

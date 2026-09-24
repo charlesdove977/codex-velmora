@@ -1,0 +1,4 @@
+---
+import Layout from '../../layouts/Layout.astro';import PageIntro from '../../components/PageIntro.astro';import Confirmation from '../../components/Confirmation';
+---
+<Layout title="Your next chapter begins." noindex={true} hideBook={true}><PageIntro title="Your next chapter begins." description="Your request details and a calendar reminder, all in one place." eyebrow="Your care, your pace"/><section class="container section" style="padding-top:0"><Confirmation client:load/></section></Layout>

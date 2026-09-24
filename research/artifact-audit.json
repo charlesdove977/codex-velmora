@@ -1,0 +1,62 @@
+[
+  {
+    "site": "SkinSpirit",
+    "folder": "01-skinspirit",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "Ever/Body",
+    "folder": "02-everbody",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "Alchemy 43",
+    "folder": "03-alchemy43",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "JECT",
+    "folder": "04-ject",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "Heyday",
+    "folder": "05-heyday",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "The Things We Do",
+    "folder": "06-thethingswedo",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "Curated Medical",
+    "folder": "07-curated-medical",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "Inside Out Aesthetics",
+    "folder": "08-inside-out",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "The Comstock",
+    "folder": "09-the-comstock",
+    "artifacts": "PASS",
+    "images": 7
+  },
+  {
+    "site": "Institute of Aesthetics",
+    "folder": "10-institute-of-aesthetics",
+    "artifacts": "PASS",
+    "images": 7
+  }
+]

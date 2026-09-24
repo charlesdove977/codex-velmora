@@ -1,0 +1,119 @@
+{
+  "research": [
+    {
+      "folder": "01-skinspirit",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "02-everbody",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "03-alchemy43",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "04-ject",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "05-heyday",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "06-thethingswedo",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "07-curated-medical",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "08-inside-out",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "09-the-comstock",
+      "missing": [],
+      "images": 7
+    },
+    {
+      "folder": "10-institute-of-aesthetics",
+      "missing": [],
+      "images": 7
+    }
+  ],
+  "researchFilesShipped": [],
+  "stockImages": [
+    {
+      "family": "desert",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "provider-1",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "provider-2",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "provider-3",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "provider-4",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "provider-5",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "ritual",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "serum",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "skin",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "space",
+      "credited": true,
+      "variants": 6
+    },
+    {
+      "family": "treatment",
+      "credited": true,
+      "variants": 6
+    }
+  ],
+  "unfinishedCopyMatches": [],
+  "threeChunks": [
+    {
+      "file": "GlassCanvas.B41PIzuu.js",
+      "gzipBytes": 233543
+    }
+  ]
+}

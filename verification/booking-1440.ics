@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Velmora//Consultation request//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:VM-0351DDE4@velmora.example
+DTSTAMP:20260924T183331Z
+DTSTART:20260925T160000Z
+DTEND:20260925T162000Z
+SUMMARY:Velmora Aesthetics consultation request
+STATUS:TENTATIVE
+DESCRIPTION:Requested time only. Await confirmation from the practice. Reference: VM-0351DDE4
+LOCATION:Virtual consultation\; link to follow
+END:VEVENT
+END:VCALENDAR

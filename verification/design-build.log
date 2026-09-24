@@ -1,0 +1,86 @@
+
+> codex-velmora@1.0.0 build
+> astro check && astro build
+
+13:47:42 [@astrojs/node] Enabling sessions with filesystem storage
+13:47:42 [content] Syncing content
+13:47:42 [content] Synced content
+13:47:42 [types] Generated 27ms
+13:47:42 [check] Getting diagnostics for Astro files in /Users/user/Desktop/Development-Charlie-2/Charlieautomates/websites/Codex-Velmora...
+[96msrc/components/Form.tsx[0m:[93m5[0m:[93m31[0m - [93mwarning[0m[90m ts(6385): [0m'FormEvent' is deprecated.
+
+[7m5[0m async function submit(e:React.FormEvent<HTMLFormElement>){e.preventDefault();const form=e.currentTarget;const data=Object.fromEntries(new FormData(form));const base={email:z.string().email('Enter a valid email address.'),website:z.string().optional()};let schema:z.ZodTypeAny=kind==='newsletter'?z.object(base):z.object({...base,name:z.string().trim().min(2,'Enter your full name.'),phone:z.string().refine(s=>!s||s.replace(/\D/g,'').length>=10,'Enter a valid phone number.').optional(),...(kind==='gift-card'?{amount:z.coerce.number().min(50).max(2000),recipient:z.string().min(2,'Enter a recipient name.')}:{message:z.string().trim().min(10,'Please share at least 10 characters.').max(2000,'Keep your message under 2,000 characters.'),...(kind==='support'?{topic:z.string().min(1,'Choose a topic.')}:{})})});const parsed=schema.safeParse(data);if(!parsed.success){setErrors(Object.fromEntries(parsed.error.issues.map(i=>[String(i.path[0]),i.message])));setStatus('Please check the fields below.');return;}setErrors({});setBusy(true);setStatus('');try{const r=await fetch(`/api/${kind}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(parsed.data)});const res=await r.json();if(!r.ok){setErrors(res.errors||{});throw new Error(res.message||'We could not send your request. Please try again.');}setSuccess(true);setStatus(kind==='newsletter'?'You’re on the list. Thank you for joining Skin Notes.':kind==='gift-card'?'Your gift card request is received. We will follow up with payment details. No payment has been taken.':'Thank you. Your message is received. We will reply within one business day.');form.reset();}catch(err){setStatus(err instanceof Error?err.message:'Please try again.');}finally{setBusy(false);}}
+[7m [0m [93m                              ~~~~~~~~~[0m
+
+[96msrc/components/three/GlassCanvas.tsx[0m:[93m6[0m:[93m43[0m - [93mwarning[0m[90m ts(6385): [0m'RGBELoader' is deprecated.
+
+[7m6[0m function Studio(){const texture=useLoader(RGBELoader,'/images/studio.hdr');const {scene}=useThree();useEffect(()=>{texture.mapping=EquirectangularReflectionMapping;scene.environment=texture;return()=>{scene.environment=null;};},[texture,scene]);return null;}
+[7m [0m [93m                                          ~~~~~~~~~~[0m
+[96msrc/components/three/GlassCanvas.tsx[0m:[93m4[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'RGBELoader' is deprecated.
+
+[7m4[0m import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader.js';
+[7m [0m [93m        ~~~~~~~~~~[0m
+
+[96msrc/layouts/Layout.astro[0m:[93m3[0m:[93m134[0m - [93mwarning[0m[90m ts(6133): [0m'addressLine' is declared but its value is never read.
+
+[7m3[0m import '../styles/global.css';import Nav from '../components/Nav.astro';import Footer from '../components/Footer.astro';import {site,addressLine,brandStyle} from '../config/site';
+[7m [0m [93m                                                                                                                                     ~~~~~~~~~~~[0m
+
+Result (24 files): 
+- 0 errors
+- 0 warnings
+- 4 hints
+
+13:47:45 [@astrojs/node] Enabling sessions with filesystem storage
+13:47:45 [content] Syncing content
+13:47:45 [content] Synced content
+13:47:45 [types] Generated 21ms
+13:47:45 [build] output: "static"
+13:47:45 [build] mode: "server"
+13:47:45 [build] directory: /Users/user/Desktop/Development-Charlie-2/Charlieautomates/websites/Codex-Velmora/dist/
+13:47:45 [build] adapter: @astrojs/node
+13:47:45 [build] Collecting build info...
+13:47:45 [build] ✓ Completed in 51ms.
+13:47:45 [build] Building server entrypoints...
+13:47:46 [WARN] [vite] "Mesh" is imported from external module "three" but never used in "src/components/three/GlassCanvas.tsx".
+13:47:46 [vite] ✓ built in 605ms
+13:47:46 [build] ✓ Completed in 626ms.
+
+ building client (vite) 
+13:47:46 [vite] transforming...
+13:47:47 [vite] ✓ 84 modules transformed.
+13:47:47 [vite] rendering chunks...
+13:47:47 [vite] computing gzip size...
+13:47:48 [vite] dist/client/_astro/Method.astro_astro_type_script_index_0_lang.yXMxnvib.js    0.64 kB │ gzip:   0.42 kB
+13:47:48 [vite] dist/client/_astro/jsx-runtime.D_zvdyIk.js                                    0.73 kB │ gzip:   0.46 kB
+13:47:48 [vite] dist/client/_astro/Tabs.CVMqf88G.js                                           0.86 kB │ gzip:   0.51 kB
+13:47:48 [vite] dist/client/_astro/Layout.astro_astro_type_script_index_0_lang.D3F9a_od.js    0.93 kB │ gzip:   0.57 kB
+13:47:48 [vite] dist/client/_astro/preload-helper.BlTxHScW.js                                 1.11 kB │ gzip:   0.65 kB
+13:47:48 [vite] dist/client/_astro/BeforeAfter.C7-Acc96.js                                    1.18 kB │ gzip:   0.62 kB
+13:47:48 [vite] dist/client/_astro/HeroScene.QtXfxc0O.js                                      1.67 kB │ gzip:   0.93 kB
+13:47:48 [vite] dist/client/_astro/TestimonialCarousel.UyePfN9S.js                            1.71 kB │ gzip:   0.86 kB
+13:47:48 [vite] dist/client/_astro/index.Bb8JjhAW.js                                          3.85 kB │ gzip:   1.72 kB
+13:47:48 [vite] dist/client/_astro/index.C3rmuWrx.js                                          8.33 kB │ gzip:   3.23 kB
+13:47:48 [vite] dist/client/_astro/lenis.BBml_0t9.js                                         18.71 kB │ gzip:   5.45 kB
+13:47:48 [vite] dist/client/_astro/ScrollTrigger.7Zy99s9Q.js                                 43.99 kB │ gzip:  18.20 kB
+13:47:48 [vite] dist/client/_astro/Form.DmXV1pOX.js                                          57.52 kB │ gzip:  13.92 kB
+13:47:48 [vite] dist/client/_astro/index.Bvu9zNsI.js                                         70.85 kB │ gzip:  27.88 kB
+13:47:48 [vite] dist/client/_astro/client.BJWys67D.js                                       211.52 kB │ gzip:  65.70 kB
+13:47:48 [vite] dist/client/_astro/GlassCanvas.BEloDTra.js                                  900.96 kB │ gzip: 242.97 kB
+13:47:48 [WARN] [vite] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+13:47:48 [vite] ✓ built in 1.40s
+
+ prerendering static routes 
+13:47:48 ▶ src/pages/styleguide.astro
+13:47:48   └─ /styleguide/index.html (+14ms) 
+13:47:48 ✓ Completed in 30ms.
+
+13:47:48 [build] Rearranging server assets...
+13:47:48 [WARN] [@astrojs/sitemap] No pages found!
+`sitemap-index.xml` not created.
+13:47:48 [build] Server built in 2.13s
+13:47:48 [build] Complete!

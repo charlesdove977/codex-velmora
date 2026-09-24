@@ -1,0 +1,5 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+const {title,eyebrow='Considered care',description,items=[]}=Astro.props;
+---
+<header class="page-top container"><Breadcrumbs items={items}/><span class="eyebrow">{eyebrow}</span><h1>{title}</h1>{description&&<p class="intro muted">{description}</p>}</header>

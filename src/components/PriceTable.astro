@@ -1,0 +1,4 @@
+---
+const {rows}=Astro.props as {rows:{name:string,price:string,note?:string,url?:string}[]};
+---
+<table class="price-table"><thead><tr><th scope="col">Treatment</th><th scope="col">Details</th><th scope="col">From</th></tr></thead><tbody>{rows.map(r=><tr><td>{r.url?<a href={r.url}>{r.name} ↗</a>:r.name}</td><td>{r.note}</td><td>{r.price}</td></tr>)}</tbody></table>

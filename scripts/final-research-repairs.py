@@ -1,0 +1,7 @@
+from pathlib import Path
+import subprocess,json
+root=Path(__file__).resolve().parents[1]
+for slug,url,sel in [('05-heyday','https://www.heydayskincare.com','#initMobileMenu'),('07-curated-medical','https://curatedmed.com','a[href*="off_canvas%3Aopen"]'),('03-alchemy43','https://alchemy43.com','.menu-button')]:
+ code='''async page=>{await page.setViewportSize({width:390,height:844});await page.goto(URL,{waitUntil:'domcontentloaded'});await page.waitForTimeout(3500);for(const s of ['button[aria-label="Close dialog"]:visible','button[aria-label="Close form"]:visible','button[aria-label="Close"]:visible','.a43-flash__close:visible','.a43-modal__close:visible','.needsclick.klaviyo-close-form:visible']){const b=page.locator(s).first();if(await b.count())await b.click({timeout:1500}).catch(()=>{});}const accept=page.getByRole('button',{name:'Accept All',exact:true});if(await accept.first().isVisible())await accept.first().click({timeout:1500}).catch(()=>{});await page.locator(SEL).first().click({timeout:5000});await page.waitForTimeout(1800);await page.screenshot({path:DEST+'/nav-open-mobile.png'});return {url:page.url(),menu:SEL};}'''.replace('URL',json.dumps(url)).replace('SEL',json.dumps(sel)).replace('DEST',json.dumps(str(root/'research/sites'/slug)))
+ r=subprocess.run(['playwright-cli','-s=velmora-repair','--raw','run-code',code],capture_output=True,text=True,cwd=root);print(slug,r.stdout[:1500],flush=True)
+subprocess.run(['playwright-cli','-s=velmora-repair','close'],cwd=root)

@@ -1,0 +1,42 @@
+{
+  "h1": {
+    "text": "SCOTTSDALE MEDICAL SPA & WELLNESS CENTER FOR NATURAL, MEDICALLY GUIDED RESULTS",
+    "font": "Rachelya",
+    "size": "68.472px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "2.05416px"
+  },
+  "h2": {
+    "text": "Our Philosophy",
+    "font": "Rachelya",
+    "size": "57.744px",
+    "color": "rgb(0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "1.73232px"
+  },
+  "body": {
+    "text": ":root{}var timer;(window.sk_applyPresets = () => {document.querySelectorAll('[class*=sk-preset]').forEach((e) => {e.clas",
+    "font": "sans-serif",
+    "size": "18px",
+    "color": "rgb(50, 37, 27)",
+    "background": "rgb(255, 255, 255)",
+    "spacing": "normal"
+  },
+  "nav": {
+    "text": "",
+    "font": "Raleway",
+    "size": "19.728px",
+    "color": "rgb(50, 37, 27)",
+    "background": "rgba(0, 0, 0, 0)",
+    "spacing": "0.39456px"
+  },
+  "button": {
+    "text": "Skip to Content",
+    "font": "omnes-pro",
+    "size": "16.272px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgb(71, 74, 49)",
+    "spacing": "normal"
+  }
+}
