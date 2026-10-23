@@ -2,6 +2,8 @@
 
 A complete luxury medical-spa concept site: Astro, Tailwind, React islands, an original Three.js glass scene, 13 treatment guides, booking requests, a six-question quiz, searchable support, journal and practice pages.
 
+**Want websites like this built and making you money?** Join [CC Strategic AI +](https://www.skool.com/cc-strategic-ai-plus/about): my 27-day Claude Code mastery program with a 1-click install setup file, and you work with us to land your first AI client in 90 days, or your money back.
+
 Full build breakdown: [Claude Code vs Codex: build a website from one prompt](https://charlieautomates.com/blog/build-website-with-claude-code-one-prompt/)
 
 ## Run locally
@@ -87,4 +89,4 @@ python3 scripts/artifact-check.py
 
 Allow a minute between submission batches when running against the same preview server; production rate limiting deliberately applies to tests too. The negative and mocked-email tests launch their own isolated local servers. Screenshot scripts currently save to this workspace's absolute build path; update that path if moving the project. `research/` is reference-only and never imported into application assets.
 
-More free Claude Code tools: [charlieautomates.com](https://charlieautomates.com/free-resources/)
+More free Claude Code tools: [charlieautomates.com](https://charlieautomates.com/free-resources/) · Go deeper inside [CC Strategic AI +](https://www.skool.com/cc-strategic-ai-plus/about)
